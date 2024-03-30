@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS files/bio.css">
+    <title>The Owner of CoogEats</title>
+</head>
+<body>
+    <header>
+        <img src="/images/bioimg.png" class="img">
+    </header>
+
+    <main>
+        <section>
+            <h1>YASSER FADHEL</h1>
+            <p>
+                A passionate food enthusiast who established CoogEats, a bustling cafeteria in Sugar Land, to cater to the University of Houston's community. 
+                <br>
+                Driven by his love for cooking and a desire to create a vibrant dining experience, Yasser curated a menu filled with tasty dishes inspired by local flavors.
+                <br>
+                <br>
+                At CoogEats, Yasser emphasizes using fresh, locally-sourced ingredients to ensure every meal is packed with flavor and quality. 
+                <br>
+                He believes in the power of good food to bring people together and is committed to providing a welcoming environment for students, faculty, and locals alike.
+                <br>
+                <br>
+                To see what CoogEats has been cooking, click the link below:
+            </p>
+        
+            <button class="link" id="visitButton">Visit the CoogEats Website</button>
+        </section>
+    </main>
+
+    <script>
+        // Redirect to the CoogEats website when the button is clicked
+        document.getElementById("visitButton").addEventListener("click", function() {
+            window.location.href = "MainCafe.html";
+        });
+
+        // Trigger animations for image, text, and button when page loads.
+        window.addEventListener("load", function() {
+            document.querySelector('.img').style.animationPlayState = 'running';
+            document.querySelectorAll('.container').forEach(function(container) {
+                container.style.animationPlayState = 'running';
+            });
+            document.querySelector('.link').style.animationPlayState = 'running';
+        });
+    </script>
+</body>
+</html>
